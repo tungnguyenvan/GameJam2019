@@ -14,7 +14,7 @@
 class CoreModel
 {
 public:
-    CoreModel();
+    CoreModel(cocos2d::Scene* scene);
     virtual ~CoreModel();
     
     virtual void        init() = 0;
@@ -28,6 +28,7 @@ public:
     
 protected:
     bool                m_isVisible;
+    cocos2d::Scene*     m_scene;
     cocos2d::Vec2       m_position;
     cocos2d::Sprite*    m_sprite;
 };

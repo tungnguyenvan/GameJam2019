@@ -7,9 +7,9 @@
 
 #include "CoreModel.hpp"
 
-CoreModel::CoreModel()
+CoreModel::CoreModel(cocos2d::Scene* scene)
 {
-    // Constructor
+    this->m_scene = scene;
 }
 
 CoreModel::~CoreModel()
