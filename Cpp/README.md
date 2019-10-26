@@ -13,7 +13,7 @@ Introduct
 
 ### Prerequisites:
 
-* Cocos2dx version 2.17.2
+* Cocos2dx version 3.17.2
 * Java SE Development Kit 8u231
 * Android SDK
 * Android NDK
