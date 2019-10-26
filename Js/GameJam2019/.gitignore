@@ -1,0 +1,47 @@
+.DS_Store
+Published
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# XCode (and ancestors) per-user config (very noisy, and not relevant)
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+# Xcode 4
+xcuserdata/
+project.xcworkspace/
+
+# cocos2d framword
+frameworks/cocos2d-html5/*
+frameworks/cocos2d-x/*
+
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+# automatic backup files
+*~.nib
+*.swp
+*~
+
+# Android generated files
+Android/assets/
+Android/bin/
+Android/gen/
+Android/obj/
+Android/lint.xml
