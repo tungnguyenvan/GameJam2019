@@ -4,6 +4,14 @@ var HelloWorldLayer = cc.Layer.extend({
     ctor:function () {
         this._super();
 
+        var size = cc.winSize;
+
+        // Test Sprite
+        var testSprite = new cc.Sprite.create(res.HelloWorld_png);
+        testSprite.setAnchorPoint(cc.p(0.5, 0.5));
+        testSprite.setPosition(cc.p(size.width / 2, size.height / 2));
+        this.addChild(testSprite);
+
         // init Touch event
         cc.eventManager.addListener({
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
