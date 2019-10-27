@@ -1,0 +1,256 @@
+{
+  "buildFiles": [
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/cocos/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/Box2D/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/chipmunk/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/freetype2/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/recast/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/bullet/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/jpeg/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/openssl/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/tiff/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/uv/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/webp/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/websockets/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/tinyxml2/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/xxhash/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/xxtea/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/clipper/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/edtaa3func/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/ConvertUTF/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/poly2tri/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/md5/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/spidermonkey/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/curl/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/png/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/android-specific/cpufeatures/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/android-specific/pvmp3dec/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/android-specific/tremolo/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/zlib/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/unzip/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/cocos/scripting/js-bindings/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/cocos/platform/android/CMakeLists.txt",
+    "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/cocos/scripting/js-bindings/proj.android/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "bulletdynamics-Debug-armeabi-v7a": {
+      "artifactName": "bulletdynamics",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/bullet/prebuilt/android/armeabi-v7a/libBulletDynamics.a"
+    },
+    "ext_bullet-Debug-armeabi-v7a": {
+      "artifactName": "ext_bullet",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/bullet/prebuilt/android/armeabi-v7a/libLinearMath.a"
+    },
+    "ext_tremolo-Debug-armeabi-v7a": {
+      "artifactName": "ext_tremolo",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_tremolo",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_tremolo.a"
+    },
+    "ext_clipper-Debug-armeabi-v7a": {
+      "artifactName": "ext_clipper",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_clipper",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_clipper.a"
+    },
+    "ext_crypto-Debug-armeabi-v7a": {
+      "artifactName": "ext_crypto",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/openssl/prebuilt/android/armeabi-v7a/libcrypto.a"
+    },
+    "ext_poly2tri-Debug-armeabi-v7a": {
+      "artifactName": "ext_poly2tri",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_poly2tri",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_poly2tri.a"
+    },
+    "ext_tinyxml2-Debug-armeabi-v7a": {
+      "artifactName": "ext_tinyxml2",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_tinyxml2",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_tinyxml2.a"
+    },
+    "bulletmultithreaded-Debug-armeabi-v7a": {
+      "artifactName": "bulletmultithreaded",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/bullet/prebuilt/android/armeabi-v7a/libBulletMultiThreaded.a"
+    },
+    "cocos2djs-Debug-armeabi-v7a": {
+      "artifactName": "cocos2djs",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target cocos2djs",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libcocos2djs.so"
+    },
+    "ext_uv-Debug-armeabi-v7a": {
+      "artifactName": "ext_uv",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/uv/prebuilt/android/armeabi-v7a/libuv_a.a"
+    },
+    "ext_curl-Debug-armeabi-v7a": {
+      "artifactName": "ext_curl",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/curl/prebuilt/android/armeabi-v7a/libcurl.a"
+    },
+    "ext_webp-Debug-armeabi-v7a": {
+      "artifactName": "ext_webp",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/webp/prebuilt/android/armeabi-v7a/libwebp.a"
+    },
+    "cpp_android_spec-Debug-armeabi-v7a": {
+      "artifactName": "cpp_android_spec",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target cpp_android_spec",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/engine/cocos/platform/libcpp_android_spec.a"
+    },
+    "ext_ssl-Debug-armeabi-v7a": {
+      "artifactName": "ext_ssl",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/openssl/prebuilt/android/armeabi-v7a/libssl.a"
+    },
+    "ext_zlib-Debug-armeabi-v7a": {
+      "artifactName": "ext_zlib",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/zlib/prebuilt/android/armeabi-v7a/libz.a"
+    },
+    "ext_freetype-Debug-armeabi-v7a": {
+      "artifactName": "ext_freetype",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/freetype2/prebuilt/android/armeabi-v7a/libfreetype.a"
+    },
+    "ext_chipmunk-Debug-armeabi-v7a": {
+      "artifactName": "ext_chipmunk",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/chipmunk/prebuilt/android/armeabi-v7a/libchipmunk.a"
+    },
+    "ext_unzip-Debug-armeabi-v7a": {
+      "artifactName": "ext_unzip",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_unzip",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_unzip.a"
+    },
+    "ext_box2d-Debug-armeabi-v7a": {
+      "artifactName": "ext_box2d",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/Box2D/prebuilt/android/armeabi-v7a/libbox2d.a"
+    },
+    "ext_cpufeatures-Debug-armeabi-v7a": {
+      "artifactName": "ext_cpufeatures",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_cpufeatures",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/engine/external/android-specific/cpufeatures/libext_cpufeatures.a"
+    },
+    "ext_md5-Debug-armeabi-v7a": {
+      "artifactName": "ext_md5",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_md5",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_md5.a"
+    },
+    "ext_xxhash-Debug-armeabi-v7a": {
+      "artifactName": "ext_xxhash",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_xxhash",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_xxhash.a"
+    },
+    "ext_websockets-Debug-armeabi-v7a": {
+      "artifactName": "ext_websockets",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/websockets/prebuilt/android/armeabi-v7a/libwebsockets.a"
+    },
+    "ext_tiff-Debug-armeabi-v7a": {
+      "artifactName": "ext_tiff",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/tiff/prebuilt/android/armeabi-v7a/libtiff.a"
+    },
+    "ext_convertUTF-Debug-armeabi-v7a": {
+      "artifactName": "ext_convertUTF",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_convertUTF",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_convertUTF.a"
+    },
+    "ext_recast-Debug-armeabi-v7a": {
+      "artifactName": "ext_recast",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_recast",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_recast.a"
+    },
+    "bulletcollision-Debug-armeabi-v7a": {
+      "artifactName": "bulletcollision",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/bullet/prebuilt/android/armeabi-v7a/libBulletCollision.a"
+    },
+    "ext_jpeg-Debug-armeabi-v7a": {
+      "artifactName": "ext_jpeg",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/jpeg/prebuilt/android/armeabi-v7a/libjpeg.a"
+    },
+    "ext_spidermonkey-Debug-armeabi-v7a": {
+      "artifactName": "ext_spidermonkey",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/spidermonkey/prebuilt/android/armeabi-v7a/libjs_static.a"
+    },
+    "jscocos2d-Debug-armeabi-v7a": {
+      "artifactName": "jscocos2d",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target jscocos2d",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libjscocos2d.a"
+    },
+    "cocos2d-Debug-armeabi-v7a": {
+      "artifactName": "cocos2d",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target cocos2d",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libcocos2d.a"
+    },
+    "ext_png-Debug-armeabi-v7a": {
+      "artifactName": "ext_png",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/png/prebuilt/android/armeabi-v7a/libpng.a"
+    },
+    "js_android_spec-Debug-armeabi-v7a": {
+      "artifactName": "js_android_spec",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target js_android_spec",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/engine/cocos/js-android/libjs_android_spec.a"
+    },
+    "ext_xxtea-Debug-armeabi-v7a": {
+      "artifactName": "ext_xxtea",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_xxtea",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_xxtea.a"
+    },
+    "external-Debug-armeabi-v7a": {
+      "artifactName": "external",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target external",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libexternal.a"
+    },
+    "ext_edtaa3func-Debug-armeabi-v7a": {
+      "artifactName": "ext_edtaa3func",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_edtaa3func",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_edtaa3func.a"
+    },
+    "ext_pvmp3dec-Debug-armeabi-v7a": {
+      "artifactName": "ext_pvmp3dec",
+      "buildCommand": "/Users/nguyenvantung/Documents/lib/sdk/cmake/3.6.4111459/bin/cmake --build /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target ext_pvmp3dec",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/lib/libext_pvmp3dec.a"
+    },
+    "linearmath-Debug-armeabi-v7a": {
+      "artifactName": "linearmath",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/bullet/prebuilt/android/armeabi-v7a/libLinearMath.a"
+    },
+    "minicl-Debug-armeabi-v7a": {
+      "artifactName": "minicl",
+      "abi": "armeabi-v7a",
+      "output": "/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/external/bullet/prebuilt/android/armeabi-v7a/libMiniCL.a"
+    }
+  }
+}

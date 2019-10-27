@@ -1,0 +1,24 @@
+-- Check for working C compiler: /Users/nguyenvantung/Documents/lib/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang
+-- Check for working C compiler: /Users/nguyenvantung/Documents/lib/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Users/nguyenvantung/Documents/lib/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
+-- Check for working CXX compiler: /Users/nguyenvantung/Documents/lib/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- using toolchain file:/Users/nguyenvantung/Documents/lib/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake
+-- PROJECT_NAME:GameJam2019
+-- PROJECT_SOURCE_DIR:/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019
+-- COCOS2DX_ROOT_PATH:/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x
+-- CMAKE_MODULE_PATH:/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/cocos2d-x/cmake/Modules/
+-- PROJECT_BINARY_DIR:/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a
+-- ENGINE_BINARY_PATH:/Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a/engine
+-- CMAKE_GENERATOR: Ninja
+-- CMAKE_BUILD_TYPE: Debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/nguyenvantung/Documents/workspace/cocos/GameJam2019/Js/GameJam2019/frameworks/runtime-src/proj.android/app/.externalNativeBuild/cmake/debug/armeabi-v7a
