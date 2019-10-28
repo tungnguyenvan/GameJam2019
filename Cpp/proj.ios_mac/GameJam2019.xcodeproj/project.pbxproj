@@ -49,6 +49,8 @@
 		572B02AD23643B7700A23688 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 572B02AA23643B7700A23688 /* MainScene.cpp */; };
 		57C0FB58235E790200256A62 /* CoreModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57C0FB56235E790200256A62 /* CoreModel.cpp */; };
 		57C0FB59235E790200256A62 /* CoreModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57C0FB56235E790200256A62 /* CoreModel.cpp */; };
+		57EFC83223665ECF00CEA7C1 /* PlayerModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57EFC83023665ECF00CEA7C1 /* PlayerModel.cpp */; };
+		57EFC83323665ECF00CEA7C1 /* PlayerModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57EFC83023665ECF00CEA7C1 /* PlayerModel.cpp */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -141,6 +143,8 @@
 		57C0FB56235E790200256A62 /* CoreModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CoreModel.cpp; sourceTree = "<group>"; };
 		57C0FB57235E790200256A62 /* CoreModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CoreModel.hpp; sourceTree = "<group>"; };
 		57C0FB5B235F2AF600256A62 /* Singleton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
+		57EFC83023665ECF00CEA7C1 /* PlayerModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerModel.cpp; sourceTree = "<group>"; };
+		57EFC83123665ECF00CEA7C1 /* PlayerModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PlayerModel.hpp; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -326,6 +330,7 @@
 		57C0FB55235E78F000256A62 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				57EFC82E23665EBA00CEA7C1 /* player */,
 				57C0FB56235E790200256A62 /* CoreModel.cpp */,
 				57C0FB57235E790200256A62 /* CoreModel.hpp */,
 			);
@@ -338,6 +343,15 @@
 				57C0FB5B235F2AF600256A62 /* Singleton.hpp */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		57EFC82E23665EBA00CEA7C1 /* player */ = {
+			isa = PBXGroup;
+			children = (
+				57EFC83023665ECF00CEA7C1 /* PlayerModel.cpp */,
+				57EFC83123665ECF00CEA7C1 /* PlayerModel.hpp */,
+			);
+			path = player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +498,7 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				572B02AC23643B7700A23688 /* MainScene.cpp in Sources */,
 				1AF87B8A1F6F7822007BE51C /* main.m in Sources */,
+				57EFC83223665ECF00CEA7C1 /* PlayerModel.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +509,7 @@
 			files = (
 				57C0FB59235E790200256A62 /* CoreModel.cpp in Sources */,
 				572B02AD23643B7700A23688 /* MainScene.cpp in Sources */,
+				57EFC83323665ECF00CEA7C1 /* PlayerModel.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
@@ -535,7 +551,10 @@
 					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)../Classes/",
+				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
@@ -569,7 +588,10 @@
 					NDEBUG,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)../Classes/",
+				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
