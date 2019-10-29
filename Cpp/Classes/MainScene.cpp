@@ -56,3 +56,18 @@ void MainScene::initPhysicsWorld()
     sprite->setPhysicsBody(cocos2d::PhysicsBody::createCircle(sprite->getContentSize().width / 2));
     this->addChild(sprite);
 }
+
+bool MainScene::onTouchBegan(cocos2d::Touch*, cocos2d::Event*)
+{
+    return false;
+}
+
+bool MainScene::onTouchMoved(cocos2d::Touch*, cocos2d::Event*)
+{
+    return false;
+}
+
+void MainScene::onTouchEnded(cocos2d::Touch*, cocos2d::Event)
+{
+    
+}

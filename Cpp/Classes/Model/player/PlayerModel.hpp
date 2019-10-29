@@ -25,6 +25,10 @@ public:
     virtual void        init() override;
     virtual void        update(float dt) override;
     
+    bool                onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
+    bool                onTouchMoved(cocos2d::Touch*, cocos2d::Event*);
+    void                onTouchEnded(cocos2d::Touch*, cocos2d::Event);
+    
 private:
     cocos2d::Sprite*    m_leftLeg;
     cocos2d::Sprite*    m_rightLeg;

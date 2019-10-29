@@ -58,3 +58,18 @@ void PlayerModel::initLegs()
     m_rightLeg->setAnchorPoint(DEFAULT_ANCHOR);
     m_rightLeg->setRotation(-15);
 }
+
+bool PlayerModel::onTouchBegan(cocos2d::Touch*, cocos2d::Event*)
+{
+    return false;
+}
+
+bool PlayerModel::onTouchMoved(cocos2d::Touch*, cocos2d::Event*)
+{
+    return false;
+}
+
+void PlayerModel::onTouchEnded(cocos2d::Touch*, cocos2d::Event)
+{
+    
+}
