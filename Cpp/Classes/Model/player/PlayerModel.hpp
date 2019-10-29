@@ -13,6 +13,9 @@
 
 #include "../CoreModel.hpp"
 
+#define DEFAULT_LEG_SIZE cocos2d::Size(5, 100)
+#define DEFAULT_ANCHOR cocos2d::Vec2(0.5, 1)
+
 class PlayerModel : public CoreModel
 {
 public:
@@ -22,9 +25,12 @@ public:
     virtual void        init() override;
     virtual void        update(float dt) override;
     
-    void                initPhysics();
-    
 private:
+    cocos2d::Sprite*    m_leftLeg;
+    cocos2d::Sprite*    m_rightLeg;
+    
+    void                initPhysics() override;
+    void                initLegs();
 };
 
 #endif /* PlayerModel_hpp */

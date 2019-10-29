@@ -28,9 +28,12 @@ public:
     
 protected:
     bool                m_isVisible;
+    cocos2d::Size      m_visibleSize;
     cocos2d::Scene*     m_scene;
     cocos2d::Vec2       m_position;
     cocos2d::Sprite*    m_sprite;
+    
+    virtual void        initPhysics();
 };
 
 #endif /* CoreModel_hpp */

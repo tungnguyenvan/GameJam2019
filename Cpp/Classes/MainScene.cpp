@@ -35,6 +35,9 @@ bool MainScene::init()
     edgeNode->setPhysicsBody(edgeBody);
     addChild(edgeNode);
     
+    m_player = new PlayerModel(this);
+    m_player->init();
+    
     return true;
 }
 

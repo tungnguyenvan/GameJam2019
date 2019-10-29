@@ -10,6 +10,7 @@
 CoreModel::CoreModel(cocos2d::Scene* scene)
 {
     this->m_scene = scene;
+    m_visibleSize = cocos2d::Director::getInstance()->getVisibleSize();
 }
 
 CoreModel::~CoreModel()
@@ -40,4 +41,9 @@ void CoreModel::setPosition(const cocos2d::Vec2& position)
 cocos2d::Vec2 CoreModel::getPosition() const
 {
     return this->m_position;
+}
+
+void CoreModel::initPhysics()
+{
+    
 }

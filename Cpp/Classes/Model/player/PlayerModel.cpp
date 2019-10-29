@@ -19,7 +19,14 @@ PlayerModel::~PlayerModel()
 
 void PlayerModel::init()
 {
+    m_sprite = cocos2d::Sprite::create("CloseNormal.png");
+    m_sprite->setPosition(cocos2d::Vec2(100, 250));
+    initLegs();
+    initPhysics();
     
+    m_scene->addChild(m_leftLeg);
+    m_scene->addChild(m_sprite);
+    m_scene->addChild(m_rightLeg);
 }
 
 void PlayerModel::update(float dt)
@@ -29,5 +36,25 @@ void PlayerModel::update(float dt)
 
 void PlayerModel::initPhysics()
 {
+    if (m_sprite != nullptr && m_rightLeg != nullptr && m_leftLeg != nullptr)
+    {
+        m_sprite->setPhysicsBody(cocos2d::PhysicsBody::createCircle(m_sprite->getContentSize().width / 2));
+        m_leftLeg->setPhysicsBody(cocos2d::PhysicsBody::createBox(m_leftLeg->getContentSize()));
+        m_rightLeg->setPhysicsBody(cocos2d::PhysicsBody::createBox(m_rightLeg->getContentSize()));
+    }
+}
+
+void PlayerModel::initLegs()
+{
+    m_leftLeg = cocos2d::Sprite::create();
+    m_leftLeg->setContentSize(DEFAULT_LEG_SIZE);
+    m_leftLeg->setPosition(cocos2d::Vec2(m_visibleSize.width / 2 - 25, m_visibleSize.height / 2));
+    m_leftLeg->setAnchorPoint(DEFAULT_ANCHOR);
+    m_leftLeg->setRotation(15);
     
+    m_rightLeg = cocos2d::Sprite::create();
+    m_rightLeg->setContentSize(DEFAULT_LEG_SIZE);
+    m_rightLeg->setPosition(cocos2d::Vec2(m_visibleSize.width / 2 + 25, m_visibleSize.height / 2));
+    m_rightLeg->setAnchorPoint(DEFAULT_ANCHOR);
+    m_rightLeg->setRotation(-15);
 }

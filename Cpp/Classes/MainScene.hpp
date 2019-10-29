@@ -10,9 +10,9 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
+#include "Model/player/PlayerModel.hpp"
 
 #define GRAVITY_Y -980
-#define USE_PHYSICS 1
 
 class MainScene : public cocos2d::Scene
 {
@@ -22,12 +22,11 @@ public:
     CREATE_FUNC(MainScene);
     
 private:
-#if defined(USE_PHYSICS)
+    PlayerModel*                m_player;
     cocos2d::PhysicsWorld *     m_physicsWorld;
     
     void        setPhysicsWorld(cocos2d::PhysicsWorld* physics);
     void        initPhysicsWorld();
-#endif
 };
 
 #endif /* MainScene_hpp */
