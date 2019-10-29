@@ -22,11 +22,6 @@ void PlayerModel::init()
     m_sprite = cocos2d::Sprite::create("CloseNormal.png");
     m_sprite->setPosition(cocos2d::Vec2(100, 250));
     initLegs();
-    initPhysics();
-    
-    m_scene->addChild(m_leftLeg);
-    m_scene->addChild(m_sprite);
-    m_scene->addChild(m_rightLeg);
 }
 
 void PlayerModel::update(float dt)
@@ -34,13 +29,23 @@ void PlayerModel::update(float dt)
     
 }
 
-void PlayerModel::initPhysics()
+void PlayerModel::initPhysics(cocos2d::PhysicsWorld* physicsWorld)
 {
+    CoreModel::initPhysics(physicsWorld);
+    
     if (m_sprite != nullptr && m_rightLeg != nullptr && m_leftLeg != nullptr)
     {
         m_sprite->setPhysicsBody(cocos2d::PhysicsBody::createCircle(m_sprite->getContentSize().width / 2));
         m_leftLeg->setPhysicsBody(cocos2d::PhysicsBody::createBox(m_leftLeg->getContentSize()));
         m_rightLeg->setPhysicsBody(cocos2d::PhysicsBody::createBox(m_rightLeg->getContentSize()));
+        
+        m_physicsJointPin = cocos2d::PhysicsJointPin::construct(m_leftLeg->getPhysicsBody(), m_rightLeg->getPhysicsBody(), cocos2d::Vec2(m_visibleSize.width / 2, m_visibleSize.height / 2 - 25));
+        m_physicsJointPin->createConstraints();
+        physicsWorld->addJoint(m_physicsJointPin);
+        
+        m_scene->addChild(m_leftLeg);
+        m_scene->addChild(m_sprite);
+        m_scene->addChild(m_rightLeg);
     }
 }
 

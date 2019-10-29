@@ -43,7 +43,7 @@ cocos2d::Vec2 CoreModel::getPosition() const
     return this->m_position;
 }
 
-void CoreModel::initPhysics()
+void CoreModel::initPhysics(cocos2d::PhysicsWorld* physicsWorld)
 {
     
 }

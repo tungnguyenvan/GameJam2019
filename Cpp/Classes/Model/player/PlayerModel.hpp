@@ -29,12 +29,17 @@ public:
     bool                onTouchMoved(cocos2d::Touch*, cocos2d::Event*);
     void                onTouchEnded(cocos2d::Touch*, cocos2d::Event);
     
-private:
-    cocos2d::Sprite*    m_leftLeg;
-    cocos2d::Sprite*    m_rightLeg;
+    void                initPhysics(cocos2d::PhysicsWorld* physicsWorld) override;
     
-    void                initPhysics() override;
-    void                initLegs();
+private:
+    // private variable
+    cocos2d::Sprite*                m_leftLeg;
+    cocos2d::Sprite*                m_rightLeg;
+    cocos2d::PhysicsJointPin*       m_physicsJointPin;
+    cocos2d::PhysicsWorld*          m_physicsWorld;
+    
+    // private function
+    void                            initLegs();
 };
 
 #endif /* PlayerModel_hpp */

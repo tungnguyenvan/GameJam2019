@@ -26,14 +26,14 @@ public:
     void                setPosition(const cocos2d::Vec2& position);
     cocos2d::Vec2       getPosition() const;
     
+    virtual void        initPhysics(cocos2d::PhysicsWorld* physicsWorld);
+    
 protected:
     bool                m_isVisible;
     cocos2d::Size      m_visibleSize;
     cocos2d::Scene*     m_scene;
     cocos2d::Vec2       m_position;
     cocos2d::Sprite*    m_sprite;
-    
-    virtual void        initPhysics();
 };
 
 #endif /* CoreModel_hpp */

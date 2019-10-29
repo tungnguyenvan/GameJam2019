@@ -55,6 +55,8 @@ void MainScene::initPhysicsWorld()
     sprite->setAnchorPoint(cocos2d::Vec2(0.5, 0.5));
     sprite->setPhysicsBody(cocos2d::PhysicsBody::createCircle(sprite->getContentSize().width / 2));
     this->addChild(sprite);
+    
+    m_player->initPhysics(m_physicsWorld);
 }
 
 bool MainScene::onTouchBegan(cocos2d::Touch*, cocos2d::Event*)
