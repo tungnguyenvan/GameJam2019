@@ -45,5 +45,11 @@ void MainScene::setPhysicsWorld(cocos2d::PhysicsWorld *physics)
 
 void MainScene::initPhysicsWorld()
 {
+    auto visibleSize = cocos2d::Director::getInstance()->getVisibleSize();
     
+    auto sprite = cocos2d::Sprite::create("CloseNormal.png");
+    sprite->setPosition(cocos2d::Vec2(visibleSize.width / 2, visibleSize.height / 2));
+    sprite->setAnchorPoint(cocos2d::Vec2(0.5, 0.5));
+    sprite->setPhysicsBody(cocos2d::PhysicsBody::createCircle(sprite->getContentSize().width / 2));
+    this->addChild(sprite);
 }
