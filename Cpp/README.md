@@ -7,7 +7,7 @@ Introduct
 # Member
 ```
 	Nguyễn Văn Tùng
-	Nguyễn Quốc Tấn
+	Nguyễn Quốc Tuấn
 	Lê Như
 ```
 
