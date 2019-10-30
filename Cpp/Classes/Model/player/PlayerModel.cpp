@@ -39,8 +39,9 @@ void PlayerModel::initPhysics(cocos2d::PhysicsWorld* physicsWorld)
         m_leftLeg->setPhysicsBody(cocos2d::PhysicsBody::createBox(m_leftLeg->getContentSize()));
         m_rightLeg->setPhysicsBody(cocos2d::PhysicsBody::createBox(m_rightLeg->getContentSize()));
         
-        m_physicsJointPin = cocos2d::PhysicsJointPin::construct(m_leftLeg->getPhysicsBody(), m_rightLeg->getPhysicsBody(), cocos2d::Vec2(m_visibleSize.width / 2, m_visibleSize.height / 2 - 25));
-        m_physicsJointPin->createConstraints();
+        m_physicsJointPin = cocos2d::PhysicsJointPin::construct(m_leftLeg->getPhysicsBody(), m_rightLeg->getPhysicsBody(), cocos2d::Vec2(m_visibleSize.width / 2, m_visibleSize.height / 2 + 50));
+        m_physicsJointPin->setCollisionEnable(false);
+        //m_physicsJointPin->createConstraints();
         physicsWorld->addJoint(m_physicsJointPin);
         
         m_scene->addChild(m_leftLeg);
@@ -55,26 +56,27 @@ void PlayerModel::initLegs()
     m_leftLeg->setContentSize(DEFAULT_LEG_SIZE);
     m_leftLeg->setPosition(cocos2d::Vec2(m_visibleSize.width / 2 - 25, m_visibleSize.height / 2));
     m_leftLeg->setAnchorPoint(DEFAULT_ANCHOR);
-    m_leftLeg->setRotation(15);
+    //m_leftLeg->setRotation(15);
     
     m_rightLeg = cocos2d::Sprite::create();
     m_rightLeg->setContentSize(DEFAULT_LEG_SIZE);
     m_rightLeg->setPosition(cocos2d::Vec2(m_visibleSize.width / 2 + 25, m_visibleSize.height / 2));
     m_rightLeg->setAnchorPoint(DEFAULT_ANCHOR);
-    m_rightLeg->setRotation(-15);
+    //m_rightLeg->setRotation(-15);
 }
 
-bool PlayerModel::onTouchBegan(cocos2d::Touch*, cocos2d::Event*)
+bool PlayerModel::onTouchBegan(cocos2d::Touch*)
 {
-    return false;
+    return true;
 }
 
-bool PlayerModel::onTouchMoved(cocos2d::Touch*, cocos2d::Event*)
+bool PlayerModel::onTouchMoved(cocos2d::Touch* touch)
 {
-    return false;
+    m_rightLeg->setPosition(touch->getLocation());
+    return true;
 }
 
-void PlayerModel::onTouchEnded(cocos2d::Touch*, cocos2d::Event)
+void PlayerModel::onTouchEnded(cocos2d::Touch*)
 {
     
 }

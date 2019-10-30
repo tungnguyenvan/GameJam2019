@@ -25,9 +25,9 @@ public:
     virtual void        init() override;
     virtual void        update(float dt) override;
     
-    bool                onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
-    bool                onTouchMoved(cocos2d::Touch*, cocos2d::Event*);
-    void                onTouchEnded(cocos2d::Touch*, cocos2d::Event);
+    bool                onTouchBegan(cocos2d::Touch*);
+    bool                onTouchMoved(cocos2d::Touch*);
+    void                onTouchEnded(cocos2d::Touch*);
     
     void                initPhysics(cocos2d::PhysicsWorld* physicsWorld) override;
     
