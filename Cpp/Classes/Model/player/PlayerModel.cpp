@@ -49,16 +49,16 @@ void PlayerModel::initPhysics(cocos2d::PhysicsWorld* physicsWorld)
         m_physicsJointRight = cocos2d::PhysicsJointSpring::construct(m_sprite->getPhysicsBody(), m_rightLeg->getPhysicsBody(), cocos2d::Vec2::ZERO, cocos2d::Vec2::ZERO, 8000, 1000);
         m_physicsJointRight->setCollisionEnable(false);
         
-        m_physicsJointLeg = cocos2d::PhysicsJointSpring::construct(m_leftLeg->getPhysicsBody(), m_rightLeg->getPhysicsBody(), cocos2d::Vec2::ZERO, cocos2d::Vec2::ZERO, 8000, 1000);
-        m_physicsJointLeg->setCollisionEnable(false);
+        m_physicsJointDistanceLeg = cocos2d::PhysicsJointDistance::construct(m_leftLeg->getPhysicsBody(), m_rightLeg->getPhysicsBody(), cocos2d::Vec2::ZERO, cocos2d::Vec2::ZERO);
+        m_physicsJointDistanceLeg->setCollisionEnable(false);
         
-        cocos2d::PhysicsJointPin* pin = cocos2d::PhysicsJointPin::construct(m_leftLeg->getPhysicsBody(), m_rightLeg->getPhysicsBody(), m_sprite->getPosition());
-        pin->setCollisionEnable(false);
+        m_physicsJointPinLeg = cocos2d::PhysicsJointPin::construct(m_leftLeg->getPhysicsBody(), m_rightLeg->getPhysicsBody(), m_sprite->getPosition());
+        m_physicsJointPinLeg->setCollisionEnable(false);
         
         physicsWorld->addJoint(m_physicsJointLeft);
         physicsWorld->addJoint(m_physicsJointRight);
-        physicsWorld->addJoint(m_physicsJointLeg);
-        physicsWorld->addJoint(pin);
+        physicsWorld->addJoint(m_physicsJointDistanceLeg);
+        physicsWorld->addJoint(m_physicsJointPinLeg);
     }
 }
 

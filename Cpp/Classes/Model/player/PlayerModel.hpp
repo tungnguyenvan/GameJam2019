@@ -37,7 +37,8 @@ private:
     cocos2d::Sprite*                m_rightLeg;
     cocos2d::PhysicsJointSpring*    m_physicsJointLeft;
     cocos2d::PhysicsJointSpring*    m_physicsJointRight;
-    cocos2d::PhysicsJointSpring*    m_physicsJointLeg;
+    cocos2d::PhysicsJointDistance*  m_physicsJointDistanceLeg;
+    cocos2d::PhysicsJointPin*       m_physicsJointPinLeg;
     
     // private function
     void                            initLegs();
