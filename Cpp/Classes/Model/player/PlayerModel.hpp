@@ -13,8 +13,8 @@
 
 #include "../CoreModel.hpp"
 
-#define DEFAULT_LEG_SIZE cocos2d::Size(5, 100)
-#define DEFAULT_ANCHOR cocos2d::Vec2(0.5, 1)
+#define DEFAULT_LEG_SIZE cocos2d::Size(5, 120)
+#define DEFAULT_ANCHOR cocos2d::Vec2(0.5, 0.9)
 
 class PlayerModel : public CoreModel
 {
@@ -35,8 +35,9 @@ private:
     // private variable
     cocos2d::Sprite*                m_leftLeg;
     cocos2d::Sprite*                m_rightLeg;
-    cocos2d::PhysicsJointPin*       m_physicsJointPin;
-    cocos2d::PhysicsWorld*          m_physicsWorld;
+    cocos2d::PhysicsJointSpring*    m_physicsJointLeft;
+    cocos2d::PhysicsJointSpring*    m_physicsJointRight;
+    cocos2d::PhysicsJointSpring*    m_physicsJointLeg;
     
     // private function
     void                            initLegs();

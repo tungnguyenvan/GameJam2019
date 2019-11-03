@@ -11,6 +11,8 @@
 #include <stdio.h>
 #include <cocos2d.h>
 
+#include "../GameDefinition.h"
+
 class CoreModel
 {
 public:

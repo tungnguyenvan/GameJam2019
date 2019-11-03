@@ -140,6 +140,7 @@
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		572B02AA23643B7700A23688 /* MainScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainScene.cpp; sourceTree = "<group>"; };
 		572B02AB23643B7700A23688 /* MainScene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MainScene.hpp; sourceTree = "<group>"; };
+		5793CCF6236F1B4C0056709C /* GameDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameDefinition.h; sourceTree = "<group>"; };
 		57C0FB56235E790200256A62 /* CoreModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CoreModel.cpp; sourceTree = "<group>"; };
 		57C0FB57235E790200256A62 /* CoreModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CoreModel.hpp; sourceTree = "<group>"; };
 		57C0FB5B235F2AF600256A62 /* Singleton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
@@ -302,6 +303,7 @@
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
 				572B02AA23643B7700A23688 /* MainScene.cpp */,
 				572B02AB23643B7700A23688 /* MainScene.hpp */,
+				5793CCF6236F1B4C0056709C /* GameDefinition.h */,
 			);
 			name = Classes;
 			path = ../Classes;

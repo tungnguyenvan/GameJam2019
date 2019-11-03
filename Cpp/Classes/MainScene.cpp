@@ -28,8 +28,11 @@ bool MainScene::init()
         return false;
     }
     
+    // Init local variable
+    m_isTouch = false;
+    
     auto visibleSize = cocos2d::Director::getInstance()->getVisibleSize();
-    auto edgeBody = cocos2d::PhysicsBody::createEdgeBox(visibleSize, cocos2d::PHYSICSBODY_MATERIAL_DEFAULT, 3);
+    edgeBody = cocos2d::PhysicsBody::createEdgeBox(visibleSize, cocos2d::PHYSICSBODY_MATERIAL_DEFAULT, 3);
     auto edgeNode = cocos2d::Node::create();
     edgeNode->setPosition(cocos2d::Vec2(visibleSize.width / 2, visibleSize.height / 2));
     edgeNode->setPhysicsBody(edgeBody);
@@ -44,6 +47,7 @@ bool MainScene::init()
     m_touchEvent->onTouchEnded = CC_CALLBACK_2(MainScene::onTouchEnded, this);
     getEventDispatcher()->addEventListenerWithSceneGraphPriority(m_touchEvent, this);
     
+    this->scheduleUpdate();
     return true;
 }
 
@@ -59,17 +63,19 @@ void MainScene::initPhysicsWorld()
 
 bool MainScene::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event*)
 {
-    m_player->onTouchBegan(touch);
     return true;
 }
 
 bool MainScene::onTouchMoved(cocos2d::Touch* touch, cocos2d::Event*)
 {
-    m_player->onTouchMoved(touch);
     return true;
 }
 
 void MainScene::onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event)
 {
-    m_player->onTouchEnded(touch);
+    m_isTouch = false;
+}
+
+void MainScene::update(float dt)
+{
 }

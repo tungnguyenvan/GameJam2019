@@ -11,8 +11,7 @@
 #include <stdio.h>
 #include "cocos2d.h"
 #include "Model/player/PlayerModel.hpp"
-
-#define GRAVITY_Y -980
+#include "GameDefinition.h"
 
 class MainScene : public cocos2d::Scene
 {
@@ -25,9 +24,13 @@ public:
     bool    onTouchMoved(cocos2d::Touch* touch, cocos2d::Event* event);
     void    onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
     
+    void    update(float);
+    
 private:
+    bool                                    m_isTouch;
     PlayerModel*                            m_player;
     cocos2d::PhysicsWorld*                  m_physicsWorld;
+    cocos2d::PhysicsBody*                   edgeBody;
     cocos2d::EventListenerTouchOneByOne*    m_touchEvent;
     
     void                setPhysicsWorld(cocos2d::PhysicsWorld* physics);
