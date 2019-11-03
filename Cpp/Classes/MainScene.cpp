@@ -63,19 +63,23 @@ void MainScene::initPhysicsWorld()
 
 bool MainScene::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event*)
 {
+    m_player->onTouchBegan(touch);
     return true;
 }
 
 bool MainScene::onTouchMoved(cocos2d::Touch* touch, cocos2d::Event*)
 {
+    m_player->onTouchMoved(touch);
     return true;
 }
 
 void MainScene::onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event)
 {
+    m_player->onTouchEnded(touch);
     m_isTouch = false;
 }
 
 void MainScene::update(float dt)
 {
+    m_player->update(dt);
 }

@@ -31,11 +31,12 @@ public:
     virtual void        initPhysics(cocos2d::PhysicsWorld* physicsWorld);
     
 protected:
-    bool                m_isVisible;
-    cocos2d::Size      m_visibleSize;
-    cocos2d::Scene*     m_scene;
-    cocos2d::Vec2       m_position;
-    cocos2d::Sprite*    m_sprite;
+    bool                            m_isVisible;
+    cocos2d::Size                   m_visibleSize;
+    cocos2d::Scene*                 m_scene;
+    cocos2d::Vec2                   m_position;
+    cocos2d::Sprite*                m_sprite;
+    cocos2d::PhysicsWorld*          m_physicsWorld;
 };
 
 #endif /* CoreModel_hpp */

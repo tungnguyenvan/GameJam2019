@@ -15,6 +15,8 @@
 
 #define DEFAULT_LEG_SIZE cocos2d::Size(5, 120)
 #define DEFAULT_ANCHOR cocos2d::Vec2(0.5, 0.9)
+#define LEG_SPEED 1
+#define PLAYER_MASS 10
 
 class PlayerModel : public CoreModel
 {
@@ -33,6 +35,9 @@ public:
     
 private:
     // private variable
+    bool                            m_isTouched;
+    bool                            m_isMoveByRightLeg;
+    int                             m_distance;
     cocos2d::Sprite*                m_leftLeg;
     cocos2d::Sprite*                m_rightLeg;
     cocos2d::PhysicsJointSpring*    m_physicsJointLeft;
