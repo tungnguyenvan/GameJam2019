@@ -39,6 +39,7 @@ bool MainScene::init()
     addChild(edgeNode);
     
     m_player = new PlayerModel(this);
+    m_player->setEdgeBody(edgeBody);
     m_player->init();
     
     m_touchEvent = cocos2d::EventListenerTouchOneByOne::create();

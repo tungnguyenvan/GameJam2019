@@ -44,6 +44,8 @@ private:
     cocos2d::PhysicsJointSpring*    m_physicsJointRight;
     cocos2d::PhysicsJointDistance*  m_physicsJointDistanceLeg;
     cocos2d::PhysicsJointPin*       m_physicsJointPinLeg;
+    cocos2d::PhysicsJointPin*       m_physicsJointPinLeft;
+    cocos2d::PhysicsJointPin*       m_physicsJointPinRight;
     
     // private function
     void                            initLegs();

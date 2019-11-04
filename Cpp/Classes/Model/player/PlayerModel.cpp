@@ -11,7 +11,7 @@ PlayerModel::PlayerModel(cocos2d::Scene* scene) : CoreModel(scene)
 {
     // Constructor
     m_isTouched = false;
-    m_isMoveByRightLeg = false;
+    m_isMoveByRightLeg = true;
 }
 
 PlayerModel::~PlayerModel()
@@ -58,10 +58,10 @@ void PlayerModel::initPhysics(cocos2d::PhysicsWorld* physicsWorld)
     
     if (m_sprite != nullptr && m_rightLeg != nullptr && m_leftLeg != nullptr)
     {
-        m_physicsJointLeft = cocos2d::PhysicsJointSpring::construct(m_sprite->getPhysicsBody(), m_leftLeg->getPhysicsBody(), cocos2d::Vec2::ZERO, cocos2d::Vec2::ZERO, -GRAVITY_Y, PLAYER_MASS);
+        m_physicsJointLeft = cocos2d::PhysicsJointSpring::construct(m_sprite->getPhysicsBody(), m_leftLeg->getPhysicsBody(), cocos2d::Vec2::ZERO, cocos2d::Vec2::ZERO, -GRAVITY_Y * 3, PLAYER_MASS);
         m_physicsJointLeft->setCollisionEnable(false);
         
-        m_physicsJointRight = cocos2d::PhysicsJointSpring::construct(m_sprite->getPhysicsBody(), m_rightLeg->getPhysicsBody(), cocos2d::Vec2::ZERO, cocos2d::Vec2::ZERO, -GRAVITY_Y, PLAYER_MASS);
+        m_physicsJointRight = cocos2d::PhysicsJointSpring::construct(m_sprite->getPhysicsBody(), m_rightLeg->getPhysicsBody(), cocos2d::Vec2::ZERO, cocos2d::Vec2::ZERO, -GRAVITY_Y * 3, PLAYER_MASS);
         m_physicsJointRight->setCollisionEnable(false);
         
         m_physicsJointDistanceLeg = cocos2d::PhysicsJointDistance::construct(m_leftLeg->getPhysicsBody(), m_rightLeg->getPhysicsBody(), cocos2d::Vec2::ZERO, cocos2d::Vec2::ZERO);
@@ -69,6 +69,9 @@ void PlayerModel::initPhysics(cocos2d::PhysicsWorld* physicsWorld)
         
         m_physicsJointPinLeg = cocos2d::PhysicsJointPin::construct(m_leftLeg->getPhysicsBody(), m_rightLeg->getPhysicsBody(), m_sprite->getPosition());
         m_physicsJointPinLeg->setCollisionEnable(false);
+        
+        m_physicsJointPinLeft = cocos2d::PhysicsJointPin::construct(m_leftLeg->getPhysicsBody(), m_mainEdgeBody, cocos2d::Vec2(0, -m_leftLeg->getContentSize().height / 2));
+        m_physicsJointPinRight = cocos2d::PhysicsJointPin::construct(m_rightLeg->getPhysicsBody(), m_mainEdgeBody, cocos2d::Vec2(0, -m_rightLeg->getContentSize().height / 2));
         
         physicsWorld->addJoint(m_physicsJointLeft);
         physicsWorld->addJoint(m_physicsJointRight);
@@ -94,6 +97,17 @@ void PlayerModel::initLegs()
 
 bool PlayerModel::onTouchBegan(cocos2d::Touch*)
 {
+    m_physicsJointPinRight->removeFormWorld();
+    m_physicsJointPinLeft->removeFormWorld();
+    if (m_isMoveByRightLeg)
+    {
+        m_physicsWorld->addJoint(m_physicsJointPinLeft);
+    }
+    else
+    {
+        m_physicsWorld->addJoint(m_physicsJointPinRight);
+    }
+    
     m_isTouched = true;
     return true;
 }
@@ -106,4 +120,6 @@ bool PlayerModel::onTouchMoved(cocos2d::Touch* touch)
 void PlayerModel::onTouchEnded(cocos2d::Touch*)
 {
     m_isTouched = false;
+    m_physicsJointPinRight->removeFormWorld();
+    m_physicsJointPinLeft->removeFormWorld();
 }

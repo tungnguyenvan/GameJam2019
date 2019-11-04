@@ -47,3 +47,8 @@ void CoreModel::initPhysics(cocos2d::PhysicsWorld* physicsWorld)
 {
     m_physicsWorld = physicsWorld;
 }
+
+void CoreModel::setEdgeBody(cocos2d::PhysicsBody* edgeBody)
+{
+    m_mainEdgeBody = edgeBody;
+}

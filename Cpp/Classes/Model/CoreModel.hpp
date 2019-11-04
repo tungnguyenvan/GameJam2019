@@ -29,6 +29,7 @@ public:
     cocos2d::Vec2       getPosition() const;
     
     virtual void        initPhysics(cocos2d::PhysicsWorld* physicsWorld);
+    virtual void        setEdgeBody(cocos2d::PhysicsBody* edgeBody);
     
 protected:
     bool                            m_isVisible;
@@ -37,6 +38,7 @@ protected:
     cocos2d::Vec2                   m_position;
     cocos2d::Sprite*                m_sprite;
     cocos2d::PhysicsWorld*          m_physicsWorld;
+    cocos2d::PhysicsBody*           m_mainEdgeBody;
 };
 
 #endif /* CoreModel_hpp */
